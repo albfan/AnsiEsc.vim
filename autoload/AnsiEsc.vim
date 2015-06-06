@@ -29,7 +29,7 @@ set cpo&vim
 
 " ---------------------------------------------------------------------
 " AnsiEsc#AnsiEsc: toggles ansi-escape code visualization {{{2
-fun! AnsiEsc#AnsiEsc(rebuild)
+function! AnsiEsc#AnsiEsc(rebuild)
 "  call Dfunc("AnsiEsc#AnsiEsc(rebuild=".a:rebuild.")")
   if a:rebuild
 "   call Decho("rebuilding AnsiEsc tables")
@@ -653,7 +653,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiWhiteWhite        ctermfg=white      ctermbg=white      guifg=White      guibg=White    cterm=none         gui=none
   endif
 "  call Dret("AnsiEsc#AnsiEsc")
-endfun
+endfunction
 
 " ---------------------------------------------------------------------
 " s:MultiElementHandler: builds custom syntax highlighting for three or more element ansi escape sequences {{{2
